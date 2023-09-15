@@ -86,7 +86,7 @@ Reminder: Ask the plan creator questions one at a time and wait for a response b
             n=1,
             stop=None,
             temperature=0,
-            model="text-davinci-003"
+            model="text-embedding-ada-002"
         )
         chat_response = response.choices[0].text.strip()
         return JSONResponse({"response": chat_response})
